@@ -1,0 +1,339 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    font-size: 18px;
+}
+@media (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+    .main {
+        width: 375px;
+    }
+}
+ul {
+    list-style: none;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 40px;
+}
+header img {
+    height: 45px;
+}
+header nav ul {
+    display: flex;
+}
+header nav ul li {
+    padding: 10px 20px;
+}
+@media (max-width: 767px) {
+    header {
+        padding: 20px;
+        font-size: 14px;
+    }
+    header img {
+        height: 20px;
+        margin-top: 5px;
+    }
+    header nav ul li {
+        padding: 5px 10px;
+    }
+}
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+@media (max-width: 767px) {
+    section {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 0 20px;
+    }
+}
+section .text{
+    width: 50%;
+}
+section h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    color: hsl(243, 87%, 12%);
+}
+section .email{
+    padding: 15px;
+    width: 280px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+section .submit {
+    padding: 17px 60px;
+    background-color:  hsl(224, 93%, 58%);
+    color: white;
+    border: none;
+}
+section .submit:hover{
+    background-color: hsl(170, 45%, 43%);
+}
+section img{
+    width: 30%;
+    height: 350px;
+    padding: 30px;
+}
+@media (max-width: 767px) {
+    section .text{
+        width: 100%;
+    }
+    section h1{
+        font-size: 25px;
+    }
+    section .email{
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-right: 0;
+    }
+    section .submit {
+        width: 300px;
+    }
+    section img{
+        width: 90%;
+        height: 200px;
+        padding: 20px;
+    }
+}
+.bg-curve {
+    height: 100px;
+    background-image: url(../images/bg-curve-desktop.svg);
+    background-size: cover;
+    margin-top: 180px;
+}
+@media (max-width: 767px) {
+    .bg-curve{
+        background-image: url(../images/bg-curve-mobile.svg);
+    }
+}
+main .section-two {
+    background-color: hsl(240, 100%, 99%);
+    padding-bottom: 100px;
+}
+main .section-two h2 {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+main .section-two h2,
+main .section-two p{
+    color: hsl(243, 87%, 12%);
+}
+@media (max-width: 767px) {
+    main .section-two {
+        background-color: white;
+    }
+    .section-two p {
+        text-align: left;
+    }
+}
+section .see-more {
+    margin-bottom: 30px;
+    padding: 10px;
+    position: relative;
+}
+section .see-more::after {
+    content: "";
+    width: 200px;
+    height: 2px;
+    background-color: hsl(170, 45%, 43%);
+    position: absolute;
+    left: 10px;
+    top: 40px;
+}
+@media (max-width: 767px) {
+    section .see-more::after {
+        width: 180px;
+        top: 40px;
+        left: 70px;
+    }
+}
+section .see-more a {
+    text-decoration: none;
+    color: hsl(170, 45%, 43%);
+}
+section .see-more .icon-arrow{
+    width: 25px;
+    height: 25px;
+    margin-bottom: -8px;
+    padding: 0;
+}
+section .box {
+    width: 330px;
+    padding: 15px 25px;
+    font-size: 15px;
+    line-height: 1.7;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 1;
+}
+.section-two .text p:first-of-type {
+    margin-top: 25px;
+}
+section .box .icon-quotes{
+    width: 15px;
+    height: 15px;
+    padding: 0;
+}
+section .box p {
+    margin: 5px 0;
+}
+@media (max-width: 767px) {
+    section .box {
+        width: 270px;
+        text-align: left;
+        font-size: 13px;
+    }
+    section .box .icon-quotes{
+        width: 15px;
+        height: 15px;
+    }
+}
+section .box figure {
+    display: flex;
+    font-size: 13px;
+    margin: 0;
+}
+section .box figure img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-top: 10px;
+    padding: 0;
+}
+section .box figure span{
+    display: block;
+}
+section .box figure .name{
+    font-weight: bold;
+}
+.access {
+    padding:80px 60px 70px;
+    background-color: hsl(238, 22%, 44%);
+    color: white;
+    align-items: center;
+}
+.access .info {
+    width: 45%;
+}
+@media (max-width: 767px) {
+    .access .info {
+        width: 100%;
+    }
+}
+.access .email {
+    padding: 10px;
+    display: block;
+}
+.access .submit {
+    padding: 15px 30px;
+    cursor: pointer;
+}
+footer {
+    background-color: hsl(243, 87%, 12%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 120px 60px 110px;
+    font-size: 15px;
+}
+@media (max-width: 767px) {
+    footer {
+        flex-direction: column;
+        font-size: 13px;
+        align-items: start;
+        position: relative;
+    }
+}
+footer span {
+    display: block;
+    padding: 10px;
+}
+footer .logo {
+    width: 140px;
+}
+@media (max-width: 767px) {
+    footer .logo{
+        margin-bottom: 20px;
+    }
+    footer span {
+        padding: 10px 0;
+    }
+}
+footer .phone {
+    display: flex;
+}
+footer .phone img{
+    width: 15px;
+    height: 15px;
+    margin-top: 12px;
+    margin-right: 15px;
+}
+footer .contact {
+    display: flex;
+}
+footer .contact img {
+    margin-right: 15px;
+}
+@media (max-width: 767px) {
+    footer .contact{
+        margin-bottom: 20px;
+    }
+}
+footer .contact img{
+    width: 15px;
+    height: 15px;
+    margin-top: 12px;
+}
+footer .about-us {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+@media (max-width: 767px) {
+    footer .about-us {
+        flex-direction: column;
+    }
+    footer .about-us .terms {
+        margin: 20px 0 60px;
+    }
+}
+footer .social-media {
+    display: flex;
+    justify-content: start;
+}
+footer .social-media .icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-left: 15px;
+    border: 1px solid white;
+}
+footer .social-media .icon:hover {
+    color: hsl(224, 93%, 58%);
+    border-color: hsl(224, 93%, 58%);
+}
+footer .social-media i{
+    text-align: center;
+    margin-left: 8px;
+    margin-top: 6px;
+}
+@media (max-width: 767px) {
+    footer .social-media {
+        padding: 20px;
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+    }
+}
