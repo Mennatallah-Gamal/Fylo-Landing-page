@@ -283,16 +283,14 @@ footer .contact {
 }
 footer .contact img {
     margin-right: 15px;
+    width: 15px;
+    height: 15px;
+    margin-top: 12px;
 }
 @media (max-width: 767px) {
     footer .contact{
         margin-bottom: 20px;
     }
-}
-footer .contact img{
-    width: 15px;
-    height: 15px;
-    margin-top: 12px;
 }
 footer .about-us {
     display: flex;
@@ -317,15 +315,13 @@ footer .social-media .icon {
     border-radius: 50%;
     margin-left: 15px;
     border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 footer .social-media .icon:hover {
     color: hsl(224, 93%, 58%);
     border-color: hsl(224, 93%, 58%);
-}
-footer .social-media i{
-    text-align: center;
-    margin-left: 8px;
-    margin-top: 6px;
 }
 @media (max-width: 767px) {
     footer .social-media {
