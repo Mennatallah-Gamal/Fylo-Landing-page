@@ -239,12 +239,15 @@ section .box figure .name{
 }
 footer {
     background-color: hsl(243, 87%, 12%);
+    font-size: 15px;
+}
+footer .footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
-    padding: 120px 60px 110px;
-    font-size: 15px;
+    padding: 120px 60px 50px;
+
 }
 @media (max-width: 767px) {
     footer {
@@ -332,4 +335,12 @@ footer .social-media .icon:hover {
         transform: translateX(-50%);
         bottom: 0;
     }
+}
+footer .attribution {
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+footer .attribution a {
+    color: hsl(224, 83%, 69%);
 }
