@@ -247,10 +247,9 @@ footer .footer{
     align-items: center;
     color: white;
     padding: 120px 60px 50px;
-
 }
 @media (max-width: 767px) {
-    footer {
+    footer .footer{
         flex-direction: column;
         font-size: 13px;
         align-items: start;
@@ -328,7 +327,7 @@ footer .social-media .icon:hover {
 }
 @media (max-width: 767px) {
     footer .social-media {
-        padding: 20px;
+        padding: 20px ;
         position: absolute;
         top: 85%;
         left: 50%;
@@ -343,4 +342,10 @@ footer .attribution {
 }
 footer .attribution a {
     color: hsl(224, 83%, 69%);
+}
+@media (max-width: 767px) {
+    footer .attribution {
+        font-size: 10px;
+        padding: 0 0 20px;
+    }
 }
