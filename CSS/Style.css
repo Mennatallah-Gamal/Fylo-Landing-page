@@ -28,6 +28,10 @@ header nav ul {
 }
 header nav ul li {
     padding: 10px 20px;
+    cursor: pointer;
+}
+header nav ul li:hover {
+    color: hsl(170, 45%, 43%);
 }
 @media (max-width: 767px) {
     header {
@@ -77,6 +81,7 @@ section .submit {
 }
 section .submit:hover{
     background-color: hsl(170, 45%, 43%);
+    cursor: pointer;
 }
 section img{
     width: 30%;
